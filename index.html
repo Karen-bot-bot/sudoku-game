@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tema-->
+    <meta name="theme-color" content="#fff">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/styles.css">
+
+    <title>Sudoku</title>
+</head>
+
+<body>
+
+    <!-- top nav -->
+    <nav>
+        <div class="nav-container">
+            <h1 class="nav-logo">
+                Sudoku
+            </h1>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <div class="dificultad">Dificultad:
+                <select>
+                    <option>Fácil</option>
+                    <option>Medio</option>
+                    <option>Difícil</option>
+                </select>
+            </div>
+            <div class="errores">Errores: 0/3</div>
+        </div>
+
+        <div>
+            <div class="cell"></div>
+        </div>
+
+
+    </main>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
