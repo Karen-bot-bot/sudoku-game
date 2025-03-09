@@ -25,12 +25,16 @@ document.querySelector("#btn-level").addEventListener("click", () => {
 
 // =========================================
 
+
+//============================================
+
 const init = () => {
   const darkmode = JSON.parse(localStorage.getItem("darkmode"));
   document.body.classList.add(darkmode ? "dark" : "light");
   document
     .querySelector('meta[name="theme-color"]')
     .setAttribute("content", darkmode ? "#1a1a2e" : "#fff");
+  
 };
 
 init();
